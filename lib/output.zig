@@ -2,7 +2,7 @@ const std = @import("std");
 
 pub fn printBanner(day: []const u8) !void {
    const stdout = std.io.getStdOut().writer();
-   // silently ignore errors
+   // ASCII Art from https://www.asciiart.eu/holiday-and-events/christmas/snowmen	
    const banner = 
 \\========================================================================= 
 \\=.      *    *           *.       *   .                      *     .    =  
