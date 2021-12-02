@@ -9,7 +9,7 @@ pub fn main() !void {
     var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);
     defer arena.deinit();
 
-    const lines = try data.readLines(&arena.allocator, "01.dat");
+    const lines = try data.readLines(u32, &arena.allocator, "01.dat");
     defer lines.deinit();
 
     var last = lines.items[0];
